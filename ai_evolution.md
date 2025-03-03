@@ -1,58 +1,59 @@
-# AI Evolution Decision Tree (2000s Onwards)
-
 ```mermaid
-graph TD;
-  A[Early 2000s: Traditional AI & ML] -->|Rule-Based AI| A1[Expert Systems]
-  A -->|Classical ML| A2[Support Vector Machines (SVM), Random Forests]
-  A -->|Bayesian Networks| A3[Medical Diagnosis, Risk Assessment]
-  A -->|Basic NLP Models| A4[Early Chatbots, Search Engines]
+graph TD
+    A[Early 2000s: Traditional AI & Machine Learning] -->|Techniques| A1(Rule-Based Systems, Classical ML)
+    A1 --> A2[Expert Systems]
+    A2 -->|Used in| A3(Rule-Based AI, Decision Trees)
+    A1 --> A4[Support Vector Machines (SVM), Random Forests]
+    A4 -->|Used in| A5(Spam Filters, Fraud Detection)
+    A1 --> A6[Bayesian Networks]
+    A6 -->|Used in| A7(Medical Diagnosis, Risk Assessment)
+    A1 --> A8[Basic NLP Models]
+    A8 -->|Used in| A9(Early Chatbots, Search Engines)
 
-  B[2010s: Deep Learning & Large-Scale AI] -->|Deep Learning| B1[Computer Vision]
-  B1 -->|CNNs| B1a[Image Recognition (Face ID, Google Photos)]
-  B1 -->|Object Detection| B1b[Self-Driving Cars, Security Cameras]
-  
-  B -->|Speech & Language Processing| B2[Recurrent Neural Networks (RNNs), LSTMs]
-  B2 -->|Virtual Assistants| B2a[Siri, Alexa, Google Assistant]
-  B2 -->|Speech-to-Text| B2b[Google Speech Recognition, Dragon Dictate]
+    B[2010s: Deep Learning & Large-Scale AI] -->|Techniques| B1(Deep Learning: CNNs, RNNs, GANs)
+    B1 --> B2[Computer Vision]
+    B2 -->|Applications| B3(Image Recognition: Face ID, Google Photos)
+    B2 -->|Applications| B4(Object Detection: Self-Driving Cars, Security Cameras)
+    B1 --> B5[Speech & Language Processing]
+    B5 -->|Applications| B6(Virtual Assistants: Siri, Alexa, Google Assistant)
+    B5 -->|Applications| B7(Speech-to-Text: Google Speech Recognition, Dragon Dictate)
+    B1 --> B8[AI-Generated Content]
+    B8 -->|Powered by GANs| B9(DeepFakes)
+    B8 -->|Powered by GANs| B10(Style Transfer: Artistic Filters)
+    B1 --> B11[Autonomous Systems]
+    B11 -->|Reinforcement Learning| B12(AlphaGo: Game AI, Self-Play Training)
+    B11 -->|Industrial Automation| B13(Robotics: Boston Dynamics)
 
-  B -->|AI-Generated Content| B3[Generative Adversarial Networks (GANs)]
-  B3 -->|DeepFakes| B3a[Fake Media, Video Manipulation]
-  B3 -->|Style Transfer| B3b[Artistic Filters]
+    C[2020s: Generative AI, LLMs & Autonomous Intelligence] -->|Techniques| C1(Transformers, RL, Diffusion Models, AI Integrators)
+    C1 --> C2[NLP: Transformers - GPT, BERT, T5, PaLM]
+    C2 -->|LLMs| C3(ChatGPT, Bard, Claude)
+    C2 -->|AI Agents| C4(AutoGPT, BabyAGI, Meta Llama Agents)
+    C2 -->|Applications| C5(Sentiment Analysis, Translation)
+    C1 --> C6[AI Integrators]
+    C6 -->|Frameworks| C7(LangChain, LlamaIndex, Pinecone)
+    C1 --> C8[Generative AI]
+    C8 -->|Diffusion Models, VAEs| C9(AI Art: DALL-E, Stable Diffusion, Midjourney)
+    C8 -->|Neural Rendering| C10(AI Video & Audio: Runway ML, Synthesia, ElevenLabs)
+    C8 -->|AI Motion| C11(Text-to-3D: Nvidia Omniverse, Sora)
+    C1 --> C12[Autonomous AI]
+    C12 -->|RL & Multi-Agent Systems| C13(Self-Driving Cars: Tesla, Waymo, Cruise)
+    C12 -->|AI in Drug Discovery| C14(DeepMind AlphaFold, Insilico Medicine)
+    C12 -->|AI for DevOps| C15(IBM Watson, AIOps)
 
-  B -->|Autonomous Systems| B4[Reinforcement Learning (RL)]
-  B4 -->|AlphaGo| B4a[Game AI, Self-Play Training]
-  B4 -->|Robotics| B4b[Boston Dynamics, Industrial Automation]
+    D[AI Agents & Multi-Modal AI] --> D1(Multi-Modal AI Models: GPT-4V, Gemini, CLIP)
+    D --> D2(AI-powered Personal Assistants: Replika, Pi AI, Humane AI Pin)
+    D --> D3(Autonomous Business Agents: Adept AI, AutoGPT for Enterprises)
 
-  C[2020s: Generative AI, LLMs & Autonomous Intelligence] -->|Transformers| C1[NLP Models]
-  C1 -->|Large Language Models (LLMs)| C1a[ChatGPT, Bard, Claude]
-  C1 -->|AI Agents| C1b[AutoGPT, BabyAGI, Meta Llama Agents]
-  C1 -->|Sentiment Analysis & Translation| C1c[Google Translate, Grammarly AI]
+    subgraph Agent Types
+        D4(Personal AI Agents: Chatbots, Task Assistants, Life Coaches)
+        D5(Business Workflow Agents: Sales Automation, HR Assistants, Market Research)
+        D6(Research & Coding Agents: AI Debugging, Auto-Code Generators, Data Analysts)
+        D7(AI-Enhanced Search Agents: Perplexity AI, AI-Powered Knowledge Retrieval)
+        D8(Autonomous Multi-Agent Collaboration: AI Agents Interacting in Complex Systems, AutoGPT Networks)
+    end
 
-  C -->|AI Integrators| C2[LangChain, LlamaIndex, Pinecone]
-
-  C -->|Generative AI| C3[Diffusion Models, VAEs, Neural Rendering]
-  C3 -->|AI Art| C3a[DALL-E, Stable Diffusion, Midjourney]
-  C3 -->|AI-Generated Video & Audio| C3b[Runway ML, Synthesia, ElevenLabs]
-  C3 -->|Text-to-3D & AI Motion| C3c[Nvidia Omniverse, Sora by OpenAI]
-
-  C -->|Autonomous AI| C4[Reinforcement Learning, Multi-Agent Systems, Robotics]
-  C4 -->|Self-Driving Cars| C4a[Tesla, Waymo, Cruise]
-  C4 -->|AI in Drug Discovery| C4b[DeepMind AlphaFold, Insilico Medicine]
-  C4 -->|AI-Optimized Infrastructure| C4c[IBM Watson, AIOps, AI for DevOps]
-
-  D[AI Agents & Multi-Modal AI] -->|Multi-Modal AI Models| D1[GPT-4V, Gemini, CLIP]
-  D -->|Personal Assistants| D2[Replika, Pi AI, Humane AI Pin]
-  D -->|Autonomous Business Agents| D3[Adept AI, AutoGPT for Enterprises]
-
-  D -->|Agent Types| D4[AI Agent Categorization]
-  D4 -->|Personal AI Agents| D4a[Chatbots, Task Assistants, Life Coaches]
-  D4 -->|Business Workflow Agents| D4b[Sales Automation, HR Assistants, Market Research]
-  D4 -->|Research & Coding Agents| D4c[AI Debugging, Auto-Code Generators, Data Analysts]
-  D4 -->|AI-Enhanced Search Agents| D4d[Perplexity AI, AI-Powered Knowledge Retrieval]
-  D4 -->|Autonomous Multi-Agent Collaboration| D4e[AI Agents Interacting, AutoGPT Networks]
-
-  E[Future Trends (2025 and Beyond)] -->|AGI Research| E1[Artificial General Intelligence]
-  E -->|AI in Scientific Discovery| E2[Quantum AI, Bioinformatics, Materials Science]
-  E -->|AI-Integrated Robotics| E3[Human Augmentation, Neuralink]
-  E -->|AI-Human Collaboration| E4[Cyborg AI, Brain-Computer Interfaces]
-  E -->|Self-Evolving AI Systems| E5[AI Writing AI, Self-Tuning Models]
+    E[Future Trends (2025+)] --> E1(AGI Research)
+    E --> E2(AI in Scientific Discovery: Quantum AI, Bioinformatics, Materials Science)
+    E --> E3(AI-Integrated Robotics & Human Augmentation)
+    E --> E4(AI-Human Collaboration: Cyborg AI, Brain-Computer Interfaces, Neuralink)
+    E --> E5(Self-Evolving AI: AI writing AI, Model fine-tuning without human input)
