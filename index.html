@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Evolution Decision Tree</title>
+    <script type="module">
+        import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .mermaid {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Evolution Decision Tree</h1>
+    <div class="mermaid">
+        graph TD;
+        A[Early 2000s: Traditional AI & Machine Learning] -->|Expert Systems| B(Rule-Based AI, Decision Trees);
+        A -->|Machine Learning| C(SVM, Random Forest);
+        A -->|Bayesian Networks| D(Medical Diagnosis, Risk Assessment);
+        A -->|Basic NLP| E(Early Chatbots, Search Engines);
+
+        F[2010s: Deep Learning & Large-Scale AI] -->|Computer Vision| G(CNN - Face ID, Google Photos);
+        F -->|Object Detection| H(Self-Driving Cars, Security Cameras);
+        F -->|Speech & Language Processing| I(RNN, LSTM - Siri, Alexa);
+        F -->|AI-Generated Content| J(GANs - DeepFakes, Style Transfer);
+        F -->|Autonomous Systems| K(RL - AlphaGo, Robotics);
+
+        L[2020s: Generative AI, LLMs & Autonomous AI] -->|Transformers| M(GPT, BERT, T5, PaLM);
+        L -->|Large Language Models| N(ChatGPT, Bard, Claude);
+        L -->|AI Agents| O(AutoGPT, BabyAGI, Meta Llama Agents);
+        L -->|AI Integrators| P(LangChain, LlamaIndex, Pinecone);
+        L -->|Generative AI| Q(Diffusion Models - DALL-E, Stable Diffusion);
+        L -->|Autonomous AI| R(Tesla Self-Driving, DeepMind AlphaFold);
+
+        S[AI Agents & Multi-Modal AI] -->|Multi-Modal Models| T(GPT-4V, Gemini, CLIP);
+        S -->|AI Personal Assistants| U(Replika, Pi AI, Humane AI Pin);
+        S -->|Business Workflow Agents| V(AutoGPT for Enterprises);
+        S -->|Research & Coding Agents| W(AI Debugging, Auto-Code Generation);
+        S -->|AI-Enhanced Search| X(Perplexity AI, AI-Powered Knowledge Retrieval);
+
+        Y[Future Trends: 2025 & Beyond] -->|AGI Research| Z(Artificial General Intelligence);
+        Y -->|AI in Scientific Discovery| AA(Quantum AI, Bioinformatics);
+        Y -->|AI-Integrated Robotics| AB(Brain-Computer Interfaces, Neuralink);
+        Y -->|Self-Evolving AI| AC(AI writing AI, Continuous Learning AI);
+    </div>
+</body>
+</html>
