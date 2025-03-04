@@ -11,8 +11,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             background-color: #f4f4f4;
+            text-align: center;
             padding: 20px;
         }
         h1 {
@@ -25,14 +25,16 @@
             display: inline-block;
             text-align: left;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            overflow-x: auto;
         }
     </style>
 </head>
 <body>
     <h1>AI Evolution Decision Tree</h1>
     <div class="mermaid">
-        graph TD;
-        A[Early 2000s: Traditional AI & Machine Learning] -->|Expert Systems| B(Rule-Based AI, Decision Trees);
+        graph LR;
+        A[Early 2000s: Traditional AI & ML] -->|Expert Systems| B(Rule-Based AI, Decision Trees);
         A -->|Machine Learning| C(SVM, Random Forest);
         A -->|Bayesian Networks| D(Medical Diagnosis, Risk Assessment);
         A -->|Basic NLP| E(Early Chatbots, Search Engines);
